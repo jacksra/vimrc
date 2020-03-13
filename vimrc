@@ -55,8 +55,6 @@ map <F12> :copen<CR>
 map <C-F12> :cclose<CR>
 " exit diff mode
 map <F9> :set noscrollbind nodiff<CR>
-" go to current quickfix line
-map <S-g> :cc<CR>
 " go to previous quickfix line
 map <S-d> :cp<CR>
 " go to next quickfix line
