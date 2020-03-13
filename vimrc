@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/BufClose.vim'
 Plug 'nvie/vim-flake8'
+" Plug 'tmhedberg/SimpylFold'
+" Plug 'Konfekt/FastFold'
 
 call plug#end()
 
@@ -72,4 +74,8 @@ let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" SimpylFold options
+" let g:SimpylFold_fold_import = 0
+" let g:SimpylFold_fold_docstring = 0
 
