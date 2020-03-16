@@ -26,26 +26,32 @@ set gfn=Bitstream\ Vera\ Sans\ Mono\ 9
 set updatetime=2000
 set nocompatible
 set nowrap
-set et
 set history=50
 set hlsearch
-set ai
-set shiftwidth=4
-set tabstop=4
 set ruler
 set backspace=indent,eol,start
-set cin
 set hid
 set incsearch
 set guioptions-=T
 set wildmode=longest,list,full
 set wildmenu
-set expandtab
 set showcmd
 set formatoptions=ro
 set makeprg=make
 set scrolloff=10
 set number
+" options related to indent
+set expandtab
+set cindent
+set autoindent
+set smartindent
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+" By default, vim's python.vim indents 2 * shiftwidth() when adding a new line
+" after the opening of parenthesis. I don't know why it does that, but I hate
+" it. Indent by shiftwidth() instead.
+let g:pyindent_open_paren = shiftwidth()
 
 :command Bc BufClose
 
@@ -79,4 +85,3 @@ let g:syntastic_check_on_wq = 0
 " SimpylFold options
 " let g:SimpylFold_fold_import = 0
 " let g:SimpylFold_fold_docstring = 0
-
