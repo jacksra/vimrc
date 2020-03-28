@@ -48,6 +48,9 @@ set smartindent
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+" Always show the status line at the bottom, even if you only have one window
+" open.
+set laststatus=2
 " By default, vim's python.vim indents 2 * shiftwidth() when adding a new line
 " after the opening of parenthesis. I don't know why it does that, but I hate
 " it. Indent by shiftwidth() instead.
