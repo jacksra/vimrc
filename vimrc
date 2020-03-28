@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/BufClose.vim'
 Plug 'nvie/vim-flake8'
+Plug 'junegunn/goyo.vim'
 Plug 'preservim/nerdtree'
 Plug 'mileszs/ack.vim'
 " Plug 'tmhedberg/SimpylFold'
