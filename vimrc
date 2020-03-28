@@ -12,6 +12,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/BufClose.vim'
 Plug 'nvie/vim-flake8'
 Plug 'preservim/nerdtree'
+Plug 'mileszs/ack.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'Konfekt/FastFold'
 
@@ -75,6 +76,8 @@ map <C-j> :%!python -m json.tool<CR>
 map <c-g> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --exclude-dir=site-packages --exclude-dir=build '\<<c-r><c-w>\>' .
 " recursive grep for symbol under cursor
 map <c-h> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --exclude-dir=site-packages --exclude-dir=build '<c-r><c-w>' .
+" Ack for symbol under cursor (exact match)
+map <c-a> <Esc>:Ack --ignore-dir=site-packages --ignore-dir=build '<c-r><c-w>'
 " Show/hide NERD Tree
 map <C-n> :NERDTreeToggle<CR>
 
