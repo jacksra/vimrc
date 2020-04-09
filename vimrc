@@ -15,6 +15,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'preservim/nerdtree'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/vcscommand.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'Konfekt/FastFold'
 
