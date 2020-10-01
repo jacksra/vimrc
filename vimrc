@@ -24,7 +24,9 @@ call plug#end()
 filetype on
 syntax on 
 
-colorscheme evening
+if has('gui_running')
+    colorscheme evening
+endif
 
 set colorcolumn=80
 set gfn=Bitstream\ Vera\ Sans\ Mono\ 9
