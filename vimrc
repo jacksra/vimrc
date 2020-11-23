@@ -18,6 +18,7 @@ Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/vcscommand.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'Konfekt/FastFold'
+Plug 'hynek/vim-python-pep8-indent'
 
 call plug#end()
 
