@@ -19,6 +19,7 @@ Plug 'vim-scripts/vcscommand.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'Konfekt/FastFold'
 Plug 'hynek/vim-python-pep8-indent'
+Plug 'tell-k/vim-autopep8'
 
 call plug#end()
 
@@ -96,6 +97,12 @@ let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" autopep8 options
+let g:autopep8_hang_closing=1
+let g:autopep8_aggressive=2
+let g:autopep8_disable_show_diff=1
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
 
 " SimpylFold options
 " let g:SimpylFold_fold_import = 0
