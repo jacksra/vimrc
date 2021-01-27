@@ -89,7 +89,7 @@ map <c-a> <Esc>:Ack! --ignore-dir=site-packages --ignore-dir=build -w '<c-r><c-w
 map <C-n> :NERDTreeToggle<CR>
 
 " syntastic options
-let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_checkers=['flake8', 'mypy']
 let g:syntastic_python_flake8_exec='python'
 " requires flake8 installed in python 2 packages
 let g:syntastic_python_flake8_args=['-m', 'flake8']
