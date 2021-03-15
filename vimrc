@@ -91,8 +91,10 @@ map <C-n> :NERDTreeToggle<CR>
 " syntastic options
 let g:syntastic_python_checkers=['flake8', 'mypy']
 let g:syntastic_python_flake8_exec='python'
-" requires flake8 installed in python 2 packages
 let g:syntastic_python_flake8_args=['-m', 'flake8']
+" mypy only exists for python3
+let g:syntastic_python_mypy_exec='python3'
+let g:syntastic_python_mypy_args=['-m', 'mypy']
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
