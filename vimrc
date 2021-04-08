@@ -100,6 +100,9 @@ let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" requires deb: shellcheck
+let g:syntastic_sh_shellcheckers=['shellcheck']
+let g:syntastic_sh_shellcheck_args="-x"
 
 " autopep8 options
 let g:autopep8_hang_closing=1
