@@ -81,9 +81,9 @@ map <S-f> :cn<CR>
 " pretty-format JSON in current buffer
 map <C-j> :%!python -m json.tool<CR>
 " recursive grep for symbol under cursor (exact match)
-map <c-g> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --include=*.x --exclude-dir=site-packages --exclude-dir=build --exclude=pylint.txt '\<<c-r><c-w>\>' .
+map <c-g> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --include=*.x --exclude-dir=site-packages --exclude-dir=build --exclude=pylint.txt --exclude-dir=.mypy_cache '\<<c-r><c-w>\>' .
 " recursive grep for symbol under cursor
-map <c-h> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --include=*.x --exclude-dir=site-packages --exclude-dir=build --exclude=pylint.txt '<c-r><c-w>' .
+map <c-h> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --include=*.x --exclude-dir=site-packages --exclude-dir=build --exclude=pylint.txt --exclude-dir=.mypy_cache '<c-r><c-w>' .
 " Ack for symbol under cursor (exact match)
 map <c-a> <Esc>:Ack! --ignore-dir=site-packages --ignore-dir=build -w '<c-r><c-w>'
 " Show/hide NERD Tree
