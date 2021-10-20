@@ -102,7 +102,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " requires deb: shellcheck
 let g:syntastic_sh_shellcheckers=['shellcheck']
-let g:syntastic_sh_shellcheck_args="-x"
+let g:syntastic_sh_shellcheck_args=['-x', '-e', 'SC1091']
 
 " autopep8 options
 let g:autopep8_hang_closing=1
