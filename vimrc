@@ -21,6 +21,7 @@ Plug 'vim-scripts/vcscommand.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'tell-k/vim-autopep8'
+Plug 'AndrewRadev/splitjoin.vim'
 
 call plug#end()
 
@@ -109,6 +110,10 @@ let g:autopep8_hang_closing=1
 let g:autopep8_aggressive=2
 let g:autopep8_disable_show_diff=1
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+
+" splitjoin
+let g:splitjoin_python_brackets_on_separate_lines = 1
+let g:splitjoin_trailing_comma = 1
 
 " SimpylFold options
 " let g:SimpylFold_fold_import = 0
