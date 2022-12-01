@@ -86,7 +86,7 @@ map <c-g> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.
 " recursive grep for symbol under cursor
 map <c-h> <Esc>:grep! -r --include=*.py --include=*.h --include=*.c --include=*.cpp --include=*.sh --include=*.pg_dump --include=*.txt --include=*.json --include=*.x --include=*.sql --exclude-dir=site-packages --exclude-dir=build --exclude=pylint.txt --exclude-dir=.mypy_cache '<c-r><c-w>' .
 " Ack for symbol under cursor (exact match)
-map <c-a> <Esc>:Ack! --ignore-dir=site-packages --ignore-dir=build -w '<c-r><c-w>'
+" map <c-a> <Esc>:Ack! --ignore-dir=site-packages --ignore-dir=build -w '<c-r><c-w>'
 " Show/hide NERD Tree
 map <C-n> :NERDTreeToggle<CR>
 
