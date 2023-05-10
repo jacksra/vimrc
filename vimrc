@@ -33,7 +33,7 @@ if has('gui_running')
 endif
 
 set colorcolumn=80
-set gfn=Bitstream\ Vera\ Sans\ Mono\ 9
+set gfn=Bitstream\ Vera\ Sans\ Mono\ 12
 set updatetime=2000
 set nocompatible
 set nowrap
