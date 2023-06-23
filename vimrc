@@ -22,6 +22,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'tell-k/vim-autopep8'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
